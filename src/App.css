@@ -1,0 +1,145 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e2f; 
+  color: #7f6c6c; 
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  max-width: 600px;
+  background-color: #2c2c3c; 
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  border: 3px solid #a29bfe;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  text-align: center;
+  color: #9dd088;
+}
+
+label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #ffffff; 
+  display: block;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 2px solid #a29bfe;
+  border-radius: 15px;
+  background-color: #c8c5c4;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  color: black;
+}
+
+
+input:focus,
+select:focus {
+  border-color: #ffb6c1;
+  outline: none;
+}
+
+.inline {
+  display: flex;
+  gap: 10px;
+}
+
+.inline input {
+  flex-grow: 1;
+}
+
+.password-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.password-toggle {
+  background: none;
+  border: none;
+  color: #ffeaa7; 
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.error {
+  color: #ff7675; 
+  font-size: 13px;
+  background-color: #ffeaea; 
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #141515; 
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover:enabled {
+  background-color: #66bb6a; 
+}
+
+button:disabled {
+  background-color: #c8e6c9; 
+  cursor: not-allowed;
+}
+
+
+
+.summary-container {
+  max-width: 600px;
+  background-color: #2c2c3c;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  border: 3px dotted #a29bfe;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.summary-container h2 {
+  text-align: center;
+  color: #ffb6c1;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.summary-container ul {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.summary-container li {
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-left: 5px solid #ffb6c1;
+  background-color: #fefefe;
+  border-radius: 10px;
+}
+
+.summary-container li strong {
+  color: #ffeaa7;
+  margin-right: 6px;
+}
