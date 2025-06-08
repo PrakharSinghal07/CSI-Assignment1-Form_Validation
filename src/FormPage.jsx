@@ -46,7 +46,7 @@ function FormPage() {
     if (data.email === "" || data.email === undefined) {
       errs.email = "Email is required";
     } else {
-      // Simple email pattern check
+
       if (!data.email.includes("@") || !data.email.includes(".")) {
         errs.email = "Please enter a valid email";
       }
@@ -81,7 +81,6 @@ function FormPage() {
     if (data.pan === "" || data.pan === undefined) {
       errs.pan = "PAN is required";
     } else {
-      // Check PAN length and format manually
       if (data.pan.length !== 10) {
         errs.pan = "PAN must be 10 characters";
       } else {
@@ -125,7 +124,6 @@ function FormPage() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    // Mark all as touched on submit so errors show up
     const allTouched = {};
     for (let key in data) {
       allTouched[key] = true;
